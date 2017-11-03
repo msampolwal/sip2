@@ -25,6 +25,15 @@ public class User {
 		this.password = password;
 	}
 	
+	public User(Integer id, String nombre, String apellido, String email, String password) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.email = email;
+		this.password = password;
+	}
+	
 	public Integer getId() {
 		return id;
 	}

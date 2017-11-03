@@ -8,6 +8,11 @@ public class Cliente extends User{
 		super();
 	}
 
+	public Cliente(Integer id, String nombre, String apellido, String email, String password, Integer puntosAcumulados) {
+		super(id, nombre, apellido, email, password);
+		this.puntosAcumulados = puntosAcumulados;
+	}
+
 	public Integer getPuntosAcumulados() {
 		return puntosAcumulados;
 	}

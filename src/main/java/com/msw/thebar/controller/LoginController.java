@@ -32,4 +32,17 @@ public class LoginController {
         	return new ResponseEntity<User>(HttpStatus.CONFLICT);
         }
     }
+    
+    @RequestMapping(value = "/register/", method = RequestMethod.POST)
+    public ResponseEntity<User> register(@RequestBody User user) {
+        System.out.println("Register User " + user);
+ 
+        User u = loginService.createUser(user);
+        if (u != null) {
+            System.out.println("Registro realizado con exito");
+            return new ResponseEntity<User>(u, HttpStatus.OK);
+        }else {
+        	return new ResponseEntity<User>(HttpStatus.CONFLICT);
+        }
+    }
 }

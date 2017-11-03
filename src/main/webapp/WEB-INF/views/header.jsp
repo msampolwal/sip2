@@ -16,6 +16,18 @@
   <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
+  
+  <style>
+ 	.estado {
+   		padding: .2em .6em .3em;
+  		border-radius: .25em;
+  		font-weight: bold;
+	} 
+	.bg-gray-dark {
+	    background-color: #3a3f51;
+	    color: #fff !important;
+	}
+  </style>
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">

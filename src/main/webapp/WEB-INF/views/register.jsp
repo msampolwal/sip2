@@ -36,13 +36,6 @@
 	           <span ng-show="myForm.password.$error.required">Campo requerido</span>
 	       </div>
         </div>
-        <div class="col-md-6">
-          <label for="exampleConfirmPassword">Confirm password</label>
-          <input ng-model="ctrl.repass" name="repass" class="form-control" id="exampleConfirmPassword" type="password" placeholder="Confirm password" req>
-       	  <div class="has-error" ng-show="myForm.repass.$dirty">
-	      	<span ng-show="myForm.repass.$error.required">Campo requerido</span>
-	      </div>
-        </div>
       </div>
     </div>
     <input class="btn btn-primary btn-block" type="submit" ng-disabled="myForm.$invalid" value="Register"/>
