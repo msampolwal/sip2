@@ -30,33 +30,6 @@
         </div>
       </div>
     </div>
-    <!-- MODERNIZR-->
-   <script src="vendor/modernizr/modernizr.custom.js"></script>
-   <!-- MATCHMEDIA POLYFILL-->
-   <script src="vendor/matchMedia/matchMedia.js"></script>
-   <!-- JQUERY-->
-   <script src="vendor/jquery/dist/jquery.js"></script>
-   <!-- BOOTSTRAP-->
-   <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
-   <!-- STORAGE API-->
-   <script src="vendor/jQuery-Storage-API/jquery.storageapi.js"></script>
-   <!-- JQUERY EASING-->
-   <script src="vendor/jquery.easing/js/jquery.easing.js"></script>
-   <!-- ANIMO-->
-   <script src="vendor/animo.js/animo.js"></script>
-   <!-- SLIMSCROLL-->
-   <script src="vendor/slimScroll/jquery.slimscroll.min.js"></script>
-   <!-- SCREENFULL-->
-   <script src="vendor/screenfull/dist/screenfull.js"></script>
-   <!-- LOCALIZE-->
-   <script src="vendor/jquery-localize-i18n/dist/jquery.localize.js"></script>
-   <!-- RTL demo-->
-   <script src="js/demo/demo-rtl.js"></script>
-   <!-- =============== PAGE VENDOR SCRIPTS ===============-->
-   <!-- SPARKLINE-->
-   <script src="vendor/sparkline/index.js"></script>
-   <!-- =============== APP SCRIPTS ===============-->
-   <script src="js/app.js"></script>
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -71,6 +44,10 @@
     <!-- Custom scripts for this page-->
     <script src="js/sb-admin-datatables.min.js"></script>
     <script src="js/sb-admin-charts.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+   	<script src="thebar/js/app.js"></script>
+   	<script src="thebar/js/controller/principal_controller.js"></script>
+   	<script src="thebar/js/service/user_service.js"></script>
   </div>
 </body>
 

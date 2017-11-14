@@ -6,9 +6,19 @@ public class Local {
 	private String nombre;
 	private String direccion;
 	private String telefono;
+	private Boolean estado;
 	
 	public Local() {
 		super();
+	}
+
+	public Local(Integer id, String nombre, String direccion, String telefono, Boolean estado) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		this.direccion = direccion;
+		this.telefono = telefono;
+		this.estado = estado;
 	}
 
 	public Integer getId() {
@@ -41,5 +51,13 @@ public class Local {
 
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
+	}
+
+	public Boolean getEstado() {
+		return estado;
+	}
+
+	public void setEstado(Boolean estado) {
+		this.estado = estado;
 	}
 }
