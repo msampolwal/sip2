@@ -13,8 +13,7 @@ angular.module('myApp').controller('LoginController', ['$scope', 'LoginService',
         .then(
         function(u){
         	console.log('El usuario esta registrado');
-        	UserService.isLogged = true;
-        	UserService.user = u;
+        	UserService.setCurrentUser(u);
         },
         function(errResponse){
         	console.log('El usuario NO esta registrado')
@@ -27,8 +26,7 @@ angular.module('myApp').controller('LoginController', ['$scope', 'LoginService',
         .then(
         function(u){
         	console.log('Registro exitoso')
-        	UserService.isLogged = true;
-        	UserService.user = u;
+        	UserService.setCurrentUser(u);
         },
         function(errResponse){
         	console.log('Registro fallido')

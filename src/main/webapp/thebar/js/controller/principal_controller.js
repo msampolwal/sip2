@@ -1,17 +1,24 @@
 'use strict';
 
-angular.module('myApp').controller('PrincipalController', ['$scope', '$http', 'UserService', function($scope, $http, UserService) {
-
-	console.log(UserService.isLogged);
-	console.log(UserService.user);
-	$scope.isLogged = UserService.isLogged;
-	$scope.user = UserService.user;
+angular.module('myApp').controller('PrincipalController', ['$scope', '$http', '$window', 'UserService', function($scope, $http, $window, UserService) {
+	var self = this;
+		
+	self.logout = logout;
+	
+	$scope.isLogged = UserService.isLogged();
+	$scope.user = UserService.currentUser();
 	
 	$http.get('http://localhost:8080/theBar/locales/')
     .success(function(res) {
 		$scope.locales = res;
-		console.log($scope.locales)
 	}).error(function(error) {
 		$scope.resource = error;
 	});
+	
+	function logout() {
+        UserService.limpiarSession();
+        $scope.isLogged = false;
+        $scope.user = null;
+        $window.location.reload();
+    }
 }]);

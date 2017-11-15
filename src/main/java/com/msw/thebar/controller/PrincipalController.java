@@ -17,8 +17,17 @@ public class PrincipalController {
 
     protected final Log logger = LogFactory.getLog(getClass());
 
-    @RequestMapping(value="/principal.htm")
+    @RequestMapping(value="/administrador.htm")
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+
+        logger.info("Returning login view");
+    	
+        return new ModelAndView("chart");
+    }
+    
+    @RequestMapping(value="/principal.htm")
+    public ModelAndView handleRequestPrincipal(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
         logger.info("Returning login view");

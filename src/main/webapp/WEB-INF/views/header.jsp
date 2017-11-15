@@ -27,9 +27,6 @@
 	    background-color: #3a3f51;
 	    color: #fff !important;
 	}
-	.gmap {
-	    height: 300px;
-	}
   </style>
 </head>
 <!-- ng-show="{{user}}" -->
@@ -44,7 +41,7 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-          <a class="nav-link" href="">
+          <a class="nav-link" href="principal.htm">
             <span class="nav-link-text">Bares</span>
           </a>
         </li>
@@ -53,13 +50,13 @@
             <span class="nav-link-text">Promociones</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables" ng-show="{{user}}">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables" ng-show="{{isLogged}}">
           <a class="nav-link" href="tables.html">
             <span class="nav-link-text">Identificacion</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables" ng-show="{{user}}">
-          <a class="nav-link" href="login.htm">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" href="administrador.htm">
             <span class="nav-link-text">Administrador</span>
           </a>
         </li>
@@ -73,8 +70,10 @@
       </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+          <a class="nav-link" href="login.htm" ng-show="{{!isLogged}}">
             <i class="fa fa-fw fa-sign-out"></i>Login</a>
+          <a class="nav-link" ng-click="ctrl.logout()" ng-show="{{isLogged}}">
+            <i class="fa fa-fw fa-sign-out"></i>Logout</a>
         </li>
       </ul>
     </div>
