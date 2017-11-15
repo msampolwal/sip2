@@ -46,16 +46,16 @@
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-          <a class="nav-link" href="charts.html">
+          <a class="nav-link" href="principal.htm">
             <span class="nav-link-text">Promociones</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables" ng-show="{{isLogged}}">
-          <a class="nav-link" href="tables.html">
-            <span class="nav-link-text">Identificacion</span>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="QR" ng-show="{{isLogged}}">
+          <a class="nav-link" href="codigoqr.htm">
+            <span class="nav-link-text">Generar QR!</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables" ng-show="{{user.tipo == 'Dueno'}}">
           <a class="nav-link" href="administrador.htm">
             <span class="nav-link-text">Administrador</span>
           </a>

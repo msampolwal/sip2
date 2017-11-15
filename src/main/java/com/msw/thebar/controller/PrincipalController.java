@@ -34,4 +34,13 @@ public class PrincipalController {
     	
         return new ModelAndView("principal");
     }
+    
+    @RequestMapping(value="/codigoqr.htm")
+    public ModelAndView handleRequestCodigoQR(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+
+        logger.info("Returning login view");
+    	
+        return new ModelAndView("codigoqr");
+    }
 }

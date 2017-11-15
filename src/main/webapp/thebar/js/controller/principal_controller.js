@@ -6,7 +6,10 @@ angular.module('myApp').controller('PrincipalController', ['$scope', '$http', '$
 	self.logout = logout;
 	
 	$scope.isLogged = UserService.isLogged();
-	$scope.user = UserService.currentUser();
+	if(UserService.isLogged()){
+		var u = UserService.currentUser();
+		$scope.user = u;
+	}
 	
 	$http.get('http://localhost:8080/theBar/locales/')
     .success(function(res) {

@@ -1,6 +1,4 @@
 </div>
-    <!-- /.container-fluid-->
-    <!-- /.content-wrapper-->
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
@@ -28,8 +26,11 @@
     <script src="js/sb-admin-charts.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
    	<script src="thebar/js/app.js"></script>
+   	<script src="//kazuhikoarase.github.io/qrcode-generator/assets/qrcode.js"></script>
+   	<script src="thebar/js/angular-qrcode.js"></script>
    	<script src="thebar/js/service/user_service.js"></script>
    	<script src="thebar/js/controller/principal_controller.js"></script>
+   	
   </div>
 </body>
 
