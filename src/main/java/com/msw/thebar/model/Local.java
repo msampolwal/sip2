@@ -7,18 +7,20 @@ public class Local {
 	private String direccion;
 	private String telefono;
 	private Boolean estado;
+	private String direccionImg;
 	
 	public Local() {
 		super();
 	}
 
-	public Local(Integer id, String nombre, String direccion, String telefono, Boolean estado) {
+	public Local(Integer id, String nombre, String direccion, String telefono, Boolean estado, String direccionImg) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.direccion = direccion;
 		this.telefono = telefono;
 		this.estado = estado;
+		this.direccionImg = direccionImg;
 	}
 
 	public Integer getId() {
@@ -59,5 +61,13 @@ public class Local {
 
 	public void setEstado(Boolean estado) {
 		this.estado = estado;
+	}
+
+	public String getDireccionImg() {
+		return direccionImg;
+	}
+
+	public void setDireccionImg(String direccionImg) {
+		this.direccionImg = direccionImg;
 	}
 }

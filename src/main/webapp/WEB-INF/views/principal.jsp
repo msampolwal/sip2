@@ -14,8 +14,11 @@
 			 </div>
 			 <h5 class="m0">Telefono : {{local.telefono}}</h5>
 			 <h5 class="m0">Direccion : {{local.direccion}}</h5>
-			 <div class="panel-footer text-center">
+			 <img src="img/{{local.direccionImg}}" class="img-responsive" style="width: 100%">
+			 <br><br>
+			 <div class="panel-footer text-center" ng-show="{{user.tipo == 'Dueno'}}">
 				<button type="button" class="btn btn-default">Entrar</button>
+			 	<br><br>
 			 </div>
 		  </div>
 	   </div>

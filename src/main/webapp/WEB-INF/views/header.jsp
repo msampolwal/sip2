@@ -42,21 +42,25 @@
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
           <a class="nav-link" href="principal.htm">
+          	<i class="fa fa-map-marker" aria-hidden="true"></i>
             <span class="nav-link-text">Bares</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
           <a class="nav-link" href="principal.htm">
+          	<i class="fa fa-beer" aria-hidden="true"></i>
             <span class="nav-link-text">Promociones</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="QR" ng-show="{{isLogged}}">
           <a class="nav-link" href="codigoqr.htm">
+          	<i class="fa fa-qrcode" aria-hidden="true"></i>
             <span class="nav-link-text">Generar QR!</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables" ng-show="{{user.tipo == 'Dueno'}}">
           <a class="nav-link" href="administrador.htm">
+            <i class="fa fa-area-chart" aria-hidden="true"></i>
             <span class="nav-link-text">Administrador</span>
           </a>
         </li>

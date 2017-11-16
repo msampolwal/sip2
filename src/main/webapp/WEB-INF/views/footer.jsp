@@ -30,7 +30,6 @@
    	<script src="thebar/js/angular-qrcode.js"></script>
    	<script src="thebar/js/service/user_service.js"></script>
    	<script src="thebar/js/controller/principal_controller.js"></script>
-   	
   </div>
 </body>
 
