@@ -31,7 +31,6 @@
    	<script src="thebar/js/service/user_service.js"></script>
    	<script src="thebar/js/controller/principal_controller.js"></script>
    	<script src="thebar/js/service/principal_service.js"></script>
-   	<script src="http://angular-ui.github.com/bootstrap/ui-bootstrap-tpls-0.2.0.js"></script>
   </div>
 </body>
 

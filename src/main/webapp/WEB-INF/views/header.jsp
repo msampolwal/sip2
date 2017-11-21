@@ -88,5 +88,5 @@
       </ul>
     </div>
   </nav>
-  <div class="content-wrapper">
+  <div class="content-wrapper" id="principal" style="display: none;">
     <div class="container-fluid">

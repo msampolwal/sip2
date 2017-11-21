@@ -20,6 +20,8 @@ angular.module('myApp').controller('PrincipalController', ['$scope', '$http', '$
 	$http.get('http://localhost:8080/theBar/locales/')
     .success(function(res) {
 		$scope.locales = res;
+		console.log($scope.locales);
+		
 	}).error(function(error) {
 		$scope.resource = error;
 	});
@@ -27,6 +29,7 @@ angular.module('myApp').controller('PrincipalController', ['$scope', '$http', '$
 	$http.get('http://localhost:8080/theBar/promociones/')
     .success(function(res) {
 		$scope.promociones = res;
+		console.log($scope.promociones);
 	}).error(function(error) {
 		$scope.resource = error;
 	});
@@ -61,4 +64,10 @@ angular.module('myApp').controller('PrincipalController', ['$scope', '$http', '$
         	console.log('La orden de compra No ha podido ser generada');
         });
 	}
+	
 }]);
+
+$(document).ready(function(){
+	debugger;
+	$("#principal").show();
+});
