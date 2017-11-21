@@ -7,6 +7,8 @@ public class User {
 	private String apellido;
 	private String email;
 	private String password;
+	private Integer puntosAcumulados;
+	private Rol rol;
 	
 	public User() {
 		super();
@@ -25,13 +27,15 @@ public class User {
 		this.password = password;
 	}
 	
-	public User(Integer id, String nombre, String apellido, String email, String password) {
+	public User(Integer id, String nombre, String apellido, String email, String password, Integer puntosAcumulados, Rol rol) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.email = email;
 		this.password = password;
+		this.puntosAcumulados = puntosAcumulados;
+		this.rol = rol;
 	}
 	
 	public Integer getId() {
@@ -64,7 +68,19 @@ public class User {
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
 	}
+	public Integer getPuntosAcumulados() {
+		return puntosAcumulados;
+	}
+	public void setPuntosAcumulados(Integer puntosAcumulados) {
+		this.puntosAcumulados = puntosAcumulados;
+	}
+	public Rol getRol() {
+		return rol;
+	}
+	public void setRol(Rol rol) {
+		this.rol = rol;
+	}
 	public String getTipo() {
-		return "User";
+		return this.getRol().getDescripcion();
 	}
 }

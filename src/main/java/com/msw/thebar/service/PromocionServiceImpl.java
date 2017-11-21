@@ -24,8 +24,8 @@ public class PromocionServiceImpl implements PromocionService {
 	
 	private static List<Promocion> loadPromociones(){
 		List<Promocion> promociones = new ArrayList<Promocion>();
-		promociones.add(new Promocion(Long.valueOf(counter.incrementAndGet()).intValue(), "2 x 1 Stella Artois", "image/stella"));
-		promociones.add(new Promocion(Long.valueOf(counter.incrementAndGet()).intValue(), "20% OFF Quilmes", "image/quilmes"));
+		promociones.add(new Promocion(Long.valueOf(counter.incrementAndGet()).intValue(), "2 x 1 Stella Artois", 10000, "img/stella_bot500.jpg"));
+		promociones.add(new Promocion(Long.valueOf(counter.incrementAndGet()).intValue(), "20% OFF Warsteiner", 3000, "img/warsteiner.jpg"));
 		return promociones;
 	}
 }

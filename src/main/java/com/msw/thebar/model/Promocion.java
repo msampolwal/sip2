@@ -8,13 +8,15 @@ public class Promocion implements Serializable{
 
 	private Integer id;
 	private String nombre;
+	private Integer puntos;
 	private String urlImagen;
 	
 	/*Constructor*/
-	public Promocion(Integer id, String nombre, String urlImagen) {
+	public Promocion(Integer id, String nombre, Integer puntos, String urlImagen) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
+		this.puntos = puntos;
 		this.urlImagen = urlImagen;
 	}
 	
@@ -30,6 +32,12 @@ public class Promocion implements Serializable{
 	}
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
+	}
+	public Integer getPuntos() {
+		return puntos;
+	}
+	public void setPuntos(Integer puntos) {
+		this.puntos = puntos;
 	}
 	public String getUrlImagen() {
 		return urlImagen;

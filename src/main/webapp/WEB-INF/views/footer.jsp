@@ -23,13 +23,15 @@
     <script src="js/sb-admin.min.js"></script>
     <!-- Custom scripts for this page-->
     <script src="js/sb-admin-datatables.min.js"></script>
-    <script src="js/sb-admin-charts.min.js"></script>
+    <script src="js/sb-admin-charts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
    	<script src="thebar/js/app.js"></script>
    	<script src="//kazuhikoarase.github.io/qrcode-generator/assets/qrcode.js"></script>
    	<script src="thebar/js/angular-qrcode.js"></script>
    	<script src="thebar/js/service/user_service.js"></script>
    	<script src="thebar/js/controller/principal_controller.js"></script>
+   	<script src="thebar/js/service/principal_service.js"></script>
+   	<script src="http://angular-ui.github.com/bootstrap/ui-bootstrap-tpls-0.2.0.js"></script>
   </div>
 </body>
 

@@ -16,6 +16,8 @@
   <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
+  <!-- Otros de Boostrap -->
+  <link href="thebar/css/bt.css" rel="stylesheet">
   
   <style>
  	.estado {
@@ -29,12 +31,10 @@
 	}
   </style>
 </head>
-<!-- ng-show="{{user}}" -->
-<!-- ng-controller="LoginController as ctrl" -->
 <body class="fixed-nav sticky-footer bg-dark" id="page-top" ng-app="myApp">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav" ng-controller="PrincipalController as ctrl">
-    <a class="navbar-brand" href="index.html">The Bar</a>
+    <a class="navbar-brand" href="index.html">SONOS</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -47,7 +47,7 @@
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-          <a class="nav-link" href="principal.htm">
+          <a class="nav-link" href="promociones.htm">
           	<i class="fa fa-beer" aria-hidden="true"></i>
             <span class="nav-link-text">Promociones</span>
           </a>
@@ -58,10 +58,16 @@
             <span class="nav-link-text">Generar QR!</span>
           </a>
         </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="LogginInfo" ng-show="{{isLogged}}">
+          <a class="nav-link" href="misdatos.htm">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <span class="nav-link-text">Informacion Personal</span>
+          </a>
+        </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables" ng-show="{{user.tipo == 'Dueno'}}">
           <a class="nav-link" href="administrador.htm">
             <i class="fa fa-area-chart" aria-hidden="true"></i>
-            <span class="nav-link-text">Administrador</span>
+            <span class="nav-link-text">Estadisticas de Consumo</span>
           </a>
         </li>
       </ul>

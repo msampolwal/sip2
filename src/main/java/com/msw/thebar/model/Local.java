@@ -1,5 +1,8 @@
 package com.msw.thebar.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Local {
 
 	private Integer id;
@@ -7,6 +10,7 @@ public class Local {
 	private String direccion;
 	private String telefono;
 	private Boolean estado;
+	private List<Stock> productos;
 	private String direccionImg;
 	
 	public Local() {
@@ -69,5 +73,15 @@ public class Local {
 
 	public void setDireccionImg(String direccionImg) {
 		this.direccionImg = direccionImg;
+	}
+
+	public List<Stock> getProductos() {
+		if(productos == null)
+			productos = new ArrayList<Stock>();
+		return productos;
+	}
+
+	public void setProductos(List<Stock> productos) {
+		this.productos = productos;
 	}
 }
